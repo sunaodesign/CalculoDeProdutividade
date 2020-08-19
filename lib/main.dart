@@ -46,11 +46,14 @@ class _HomeState extends State<Home>  {
         _infoText = "Abaixo da Meta(${produtividade.toStringAsPrecision(2)}%)\n\n"
           "Quant. P/Hora(${porHora.toStringAsPrecision(3)}Peças)";
       } else if (produtividade >= 75 && produtividade < 80) {
-        _infoText = "Produtividade Ideal (${produtividade.toStringAsPrecision(2)}%)";
+        _infoText = "Produtividade Ideal (${produtividade.toStringAsPrecision(2)}%)\n\n"
+          "Quant. P/Hora(${porHora.toStringAsPrecision(3)}Peças)";
       } else if (produtividade >= 80 && produtividade < 100) {
-        _infoText = "Ótima Produção (${produtividade.toStringAsPrecision(2)}%)";
+        _infoText = "Ótima Produção (${produtividade.toStringAsPrecision(2)}%)\n\n"
+          "Quant. P/Hora(${porHora.toStringAsPrecision(3)}Peças)";
       } else if (produtividade >= 100)
-        _infoText = "Excelente!!!(${produtividade.toStringAsPrecision(3)}%)";
+        _infoText = "Excelente!!!(${produtividade.toStringAsPrecision(3)}%)\n\n"
+          "Quant. P/Hora(${porHora.toStringAsPrecision(3)}Peças)";
     });
   }
   
